@@ -1,0 +1,71 @@
+@import "footer mixin";
+
+:root {
+  --white: #fefeff;
+  --text-navbar-color: #1f1f1f;
+  --gray-color: #bebebe;
+  --color: #000;
+}
+
+.footer {
+  @include content-row;
+  margin-top: 32px;
+  position: relative;
+  gap: 180px;
+  margin-top: 140px;
+
+  .footer_background {
+    @include content-column;
+    @include background;
+
+    img {
+      width: 1280px;
+    }
+  }
+
+  .footer_image {
+    position: absolute;
+    top: -50px;
+    left: 55px;
+
+    img {
+      width: 600px;
+    }
+  }
+
+  .footer_texts {
+    @include background-text;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+
+    .paragraph2 {
+      width: 700px;
+      font-size: 45px;
+      font-weight: 600;
+
+      p {
+        @include background-paragraph;
+      }
+    }
+
+    .paragraph3 {
+      @include navbar-text;
+      line-height: 24px;
+      margin-top: 25px;
+    }
+
+    .box {
+      @include background-box;
+
+      .enter {
+        opacity: 0.45;
+      }
+
+      .box_button {
+        @include content-column;
+        @include box-button;
+      }
+    }
+  }
+}

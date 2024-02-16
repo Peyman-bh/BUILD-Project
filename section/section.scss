@@ -1,0 +1,249 @@
+@import "section mixin";
+
+:root {
+  --white: #fefeff;
+  --text-navbar-color: #1f1f1f;
+  --gray-color: #bebebe;
+  --color: #000;
+}
+
+.section1 {
+  @include content-row;
+  margin-top: 45px;
+  gap: 30px;
+
+  .one_section {
+    @include content-column;
+    @include section1;
+
+    .image {
+      @include content-column;
+      margin-top: 7.5px;
+
+      img {
+        width: 400px;
+      }
+    }
+
+    .texts {
+      @include content-column;
+      @include section1-text;
+
+      .title {
+        @include center-text;
+        font-size: 20px;
+      }
+
+      .paragraph {
+        width: 329px;
+        @include navbar-text;
+        margin: 0;
+      }
+    }
+
+    .stars {
+      @include content-row;
+      padding: 0px 0px 0px 24px;
+      gap: 5px;
+
+      p {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .two_section {
+    @include content-column;
+    @include section1;
+
+    .image {
+      @include content-column;
+      margin-top: 8px;
+
+      img {
+        width: 400px;
+      }
+    }
+
+    .texts {
+      @include content-column;
+      @include section1-text;
+      .title {
+        @include center-text;
+        font-size: 20px;
+      }
+
+      .paragraph {
+        width: 329px;
+        @include navbar-text;
+        margin: 0;
+      }
+    }
+
+    .stars {
+      @include content-row;
+      padding: 0px 0px 0px 24px;
+      gap: 5px;
+
+      p {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .three_section {
+    @include content-column;
+    @include section1;
+
+    .image {
+      @include content-column;
+      margin-top: 8px;
+
+      img {
+        width: 400px;
+      }
+    }
+
+    .texts {
+      @include content-column;
+      @include section1-text;
+
+      .title {
+        @include center-text;
+        font-size: 20px;
+      }
+
+      .paragraph {
+        width: 329px;
+        @include navbar-text;
+        margin: 0;
+      }
+    }
+
+    .stars {
+      @include content-row;
+      padding: 0px 0px 0px 24px;
+      gap: 5px;
+
+      p {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.section2 {
+  @include content-row;
+  gap: 200px;
+  margin-top: 80px;
+
+  .section2_texts {
+    @include content-column;
+    align-items: start;
+    width: 497px;
+
+    .text {
+      @include content-column;
+      align-items: start;
+
+      .title {
+        @include center-text;
+        font-size: 38px;
+      }
+
+      .paragraph {
+        @include navbar-text;
+        width: 480px;
+      }
+    }
+  }
+  .section2_buttons {
+    @include content-row;
+    gap: 25px;
+    margin-top: 45px;
+
+    .button1 {
+      @include content-column;
+      @include navbar-text;
+      @include button;
+      background: var(--text-navbar-color);
+      color: var(--white);
+    }
+
+    .button2 {
+      @include content-column;
+      @include navbar-text;
+      @include button;
+      border: 1px solid var(--gray-color);
+      background: var(--white);
+    }
+  }
+  .numbers {
+    @include content-row;
+    gap: 95px;
+    margin-top: 80px;
+
+    .number1 {
+      @include content-column;
+      line-height: 300%;
+      align-items: start;
+
+      .n {
+        @include center-text;
+        font-size: 67px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .t {
+        @include navbar-text;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .number2 {
+      @include content-column;
+      line-height: 300%;
+      align-items: start;
+
+      .n {
+        @include center-text;
+        font-size: 67px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .t {
+        @include navbar-text;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .number3 {
+      @include content-column;
+      line-height: 300%;
+      align-items: start;
+
+      .n {
+        @include center-text;
+        font-size: 67px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .t {
+        @include navbar-text;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .section2_image {
+    @include content-column;
+
+    img {
+      width: 500px;
+    }
+  }
+}

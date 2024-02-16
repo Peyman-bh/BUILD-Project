@@ -1,0 +1,65 @@
+@import "center into mixin";
+
+:root {
+  --white: #fefeff;
+  --text-navbar-color: #1f1f1f;
+  --gray-color: #bebebe;
+  --color: #000;
+}
+
+.center_into {
+  @include content-row;
+  gap: 120px;
+
+  .into_one {
+    @include content-column;
+    align-items: start;
+    gap: 22px;
+
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .paragraph {
+      @include navbar-text;
+      width: 329px;
+      margin: 0;
+    }
+  }
+  .into_two {
+    @include content-column;
+    align-items: start;
+    gap: 22px;
+
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .paragraph {
+      @include navbar-text;
+      width: 329px;
+      margin: 0;
+    }
+  }
+  .into_three {
+    @include content-column;
+    align-items: start;
+    gap: 22px;
+
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .paragraph {
+      @include navbar-text;
+      width: 329px;
+      margin: 0;
+    }
+  }
+}

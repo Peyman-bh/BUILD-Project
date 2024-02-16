@@ -1,0 +1,79 @@
+:root {
+  --white: #fefeff;
+  --text-navbar-color: #1f1f1f;
+}
+
+:root {
+  --white: #fefeff;
+  --text-navbar-color: #1f1f1f;
+  --gray-color: #bebebe;
+  --color: #000;
+}
+
+.center_into {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 120px;
+}
+.center_into .into_one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 22px;
+}
+.center_into .into_one .title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+.center_into .into_one .paragraph {
+  color: var(--text-navbar-color);
+  font-size: 16px;
+  font-weight: 400;
+  width: 329px;
+  margin: 0;
+}
+.center_into .into_two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 22px;
+}
+.center_into .into_two .title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+.center_into .into_two .paragraph {
+  color: var(--text-navbar-color);
+  font-size: 16px;
+  font-weight: 400;
+  width: 329px;
+  margin: 0;
+}
+.center_into .into_three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 22px;
+}
+.center_into .into_three .title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+.center_into .into_three .paragraph {
+  color: var(--text-navbar-color);
+  font-size: 16px;
+  font-weight: 400;
+  width: 329px;
+  margin: 0;
+}/*# sourceMappingURL=center into.css.map */

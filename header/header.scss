@@ -1,0 +1,111 @@
+@import "header mixin";
+
+:root {
+  --white: #fefeff;
+  --text-navbar-color: #1f1f1f;
+  --gray-color: #bebebe;
+  --color: #000;
+}
+
+.navbar {
+  @include content-row;
+  justify-content: space-between;
+  width: 1230px;
+  height: 75px;
+  border-radius: 70px;
+  background: var(--gray-2, #fafafa);
+  margin-top: 35px;
+  padding: 0px 24px 0px 40px;
+
+  .navbar_searchbar {
+    @include content-row;
+    gap: 35px;
+    width: 550px;
+    height: 60px;
+    border-radius: 40px;
+    background: var(--white);
+    margin-left: 180px;
+
+    .searchbar_list {
+      @include content-row;
+      @include navbar-text;
+      gap: 35px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .navbar_list {
+    @include content-row;
+    @include navbar-text;
+  }
+
+  .navbar_button {
+    @include content-row;
+    border-radius: 40px;
+    border: 1px solid var(--gray-color);
+    background: var(--white);
+    height: 23px;
+    padding: 15px 35px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.title {
+  @include content-row;
+  margin-top: 32px;
+  position: relative;
+
+  .title_background {
+    @include content-column;
+    @include background;
+
+    img {
+      width: 1280px;
+    }
+  }
+
+  .title_image {
+    img {
+      width: 750px;
+    }
+  }
+
+  .title_texts {
+    @include background-text;
+
+    .paragraph1 {
+      @include navbar-text;
+      color: var(--color);
+    }
+
+    .paragraph2 {
+      font-size: 67px;
+      font-weight: 600;
+
+      p {
+        @include background-paragraph;
+      }
+    }
+
+    .paragraph3 {
+      @include navbar-text;
+      line-height: 24px;
+      margin-top: 25px;
+    }
+
+    .box {
+      @include background-box;
+
+      .enter {
+        opacity: 0.45;
+      }
+
+      .box_button {
+        @include box-button;
+      }
+    }
+  }
+}
